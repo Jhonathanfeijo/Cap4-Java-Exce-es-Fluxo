@@ -24,9 +24,13 @@ public class FluxoComTratamento {
 			System.out.println(i);
 			//int a = i / 0;
 			Conta c = null;
+			try {
 			c.deposita();
-		}
+			}catch(MinhaExcecao top) {
+			
+			}
 		System.out.println("Fim do metodo2");		
+		}
 	}
 }
 
